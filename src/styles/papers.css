@@ -141,4 +141,11 @@
       background-image: none;
 }
 
+.tag-code a:hover{
+      text-decoration: underline;
+      background: none;
+      background-color: none;
+      background-image: none;
+}
+
 
