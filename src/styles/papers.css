@@ -137,6 +137,8 @@
 .tag-code:hover{
       text-decoration: underline;
       background: none;
+      background-color: none;
+      background-image: none;
 }
 
 
