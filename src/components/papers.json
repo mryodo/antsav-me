@@ -1,0 +1,147 @@
+[
+      {
+            "name": "Quantifying the structural stability of simplicial homology",
+            "authors": [
+                  {
+                        "name": "N.Guglielmi",
+                        "orcid": "https://orcid.org/0000-0003-3795-5225",
+                        "scholar": "https://scholar.google.it/citations?hl=en&user=wI-7JnMAAAAJ"
+                  },
+                  {
+                        "name": "A.Savostianov",
+                        "orcid": "https://orcid.org/0000-0003-0126-3059",
+                        "scholar": "https://scholar.google.it/citations?user=E0nt-XYAAAAJ&hl=en"
+                  },
+                  {
+                        "name": "F.Tudisco",
+                        "orcid": "https://orcid.org/0000-0002-8150-4475",
+                        "scholar": "https://scholar.google.it/citations?hl=en&user=uND_5REAAAAJ"
+                  }
+            ],
+            "journal": "arXiv",
+            "year": "2023",
+            "tags": ["netsci", "la"],
+            "doi": "https://doi.org/10.48550/arXiv.2301.03627",
+            "code": "https://github.com/COMPiLELab/HOLaGraF"
+      },
+      {
+            "name": "Dynamics of Phase Synchronization between Solar Polar Magnetic Fields Assessed with Van Der Pol and Kuramoto Models",
+            "authors": [
+                  {
+                        "name": "A.Savostianov",
+                        "orcid": "https://orcid.org/0000-0003-0126-3059",
+                        "scholar": "https://scholar.google.it/citations?user=E0nt-XYAAAAJ&hl=en"
+                  },
+                  {
+                        "name": "A.Shapoval",
+                        "orcid": "https://orcid.org/0000-0001-5340-1930",
+                        "scholar": "https://scholar.google.it/citations?hl=en&user=PucdzTkAAAAJ"
+                  },
+                  {
+                        "name": "M.Shnirman",
+                        "orcid": "https://orcid.org/0000-0001-7220-1424",
+                        "scholar": ""
+                  }
+            ],
+            "journal": "Entropy, 22(9), 945",
+            "year": "2020",
+            "tags": ["sun", "oscillators"],
+            "doi": "https://doi.org/10.3390/e22090945",
+            "code": "https://github.com/mryodo/sun.activity"
+      },
+      {
+            "name": "Reconstruction of the coupling between solar proxies: When approaches based on Kuramoto and Van der Pol models agree with each other",
+            "authors": [
+                  {
+                        "name": "A.Savostianov",
+                        "orcid": "https://orcid.org/0000-0003-0126-3059",
+                        "scholar": "https://scholar.google.it/citations?user=E0nt-XYAAAAJ&hl=en"
+                  },
+                  {
+                        "name": "A.Shapoval",
+                        "orcid": "https://orcid.org/0000-0001-5340-1930",
+                        "scholar": "https://scholar.google.it/citations?hl=en&user=PucdzTkAAAAJ"
+                  },
+                  {
+                        "name": "M.Shnirman",
+                        "orcid": "https://orcid.org/0000-0001-7220-1424",
+                        "scholar": ""
+                  }
+            ],
+            "journal": "Communications in Nonlinear Science and Numerical Simulation 83",
+            "year": "2020",
+            "tags": ["sun", "oscillators"],
+            "doi": "https://doi.org/10.1016/j.cnsns.2019.105149",
+            "code": "https://github.com/mryodo/sun.activity"
+      },
+      {
+            "name": "The inverse problem for the Kuramoto model of two nonlinear coupled oscillators driven by applications to solar activity",
+            "authors": [
+                  {
+                        "name": "A.Savostianov",
+                        "orcid": "https://orcid.org/0000-0003-0126-3059",
+                        "scholar": "https://scholar.google.it/citations?user=E0nt-XYAAAAJ&hl=en"
+                  },
+                  {
+                        "name": "A.Shapoval",
+                        "orcid": "https://orcid.org/0000-0001-5340-1930",
+                        "scholar": "https://scholar.google.it/citations?hl=en&user=PucdzTkAAAAJ"
+                  },
+                  {
+                        "name": "M.Shnirman",
+                        "orcid": "https://orcid.org/0000-0001-7220-1424",
+                        "scholar": ""
+                  }
+            ],
+            "journal": "Physica D: Nonlinear Phenomena 401",
+            "year": "2020",
+            "tags": ["sun", "oscillators"],
+            "doi": "https://doi.org/10.1016/j.physd.2019.132160",
+            "code": "https://github.com/mryodo/sun.activity"
+      },
+      {
+            "name": "Prediction of Dictyostelium discoideum chromatin loops from genomic sequence",
+            "authors": [
+                  {
+                        "name": "V.Savinova",
+                        "orcid": "",
+                        "scholar": ""
+                  },
+                  {
+                        "name": "A.Savostianov",
+                        "orcid": "https://orcid.org/0000-0003-0126-3059",
+                        "scholar": "https://scholar.google.it/citations?user=E0nt-XYAAAAJ&hl=en"
+                  },
+                  {
+                        "name": "O.Tsoy, S.Ulyanov, S.Razin, M.Gelfand, E.Khrameeva, A.Galitsyna",
+                        "orcid": "",
+                        "scholar": ""
+                  }
+            ],
+            "journal": "proceedings",
+            "year": "2019",
+            "tags": ["dna"],
+            "doi": "https://doi.org/10.1016/j.physd.2019.132160",
+            "code": "https://github.com/mryodo/sun.activity"
+      },
+      {
+            "name": "Nontrivial stationary points of two-species self-structured communities",
+            "authors": [
+                  {
+                        "name": "A.Savostianov",
+                        "orcid": "https://orcid.org/0000-0003-0126-3059",
+                        "scholar": "https://scholar.google.it/citations?user=E0nt-XYAAAAJ&hl=en"
+                  },
+                  {
+                        "name": "A.Nikitin",
+                        "orcid": "https://orcid.org/0000-0002-1401-6682",
+                        "scholar": "https://scholar.google.it/citations?hl=en&user=pej2J50AAAAJ&view_op=list_works&sortby=pubdate"
+                  }
+            ],
+            "journal": "Moscow University Computational Mathematics and Cybernetics",
+            "year": "2017",
+            "tags": ["bio"],
+            "doi": "https://doi.org/10.3103/S0278641917030050",
+            "code": "https://github.com/mryodo/nonlinSolver2sp"
+      }
+]

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "cattpuccin.css";
+@import "papers.css";
+
+@import "layout.css";
+
+@import "news.css";
+
+*,
+*::after,
+**::before{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+}
+
+img, 
+picture,
+svg{
+      max-width: 100%;
+      display: block;
+}
+
+:root{
+      --grad: -webkit-linear-gradient(180deg, hsl(var(--ctp-latte-pink-hsl)), hsl(var(--ctp-latte-mauve-hsl)));
+      --grad2: -webkit-linear-gradient(180deg, hsl(var(--ctp-frappe-pink-hsl)), hsl(var(--ctp-frappe-mauve-hsl)));
+      --grad3: -webkit-linear-gradient(180deg, hsl(var(--ctp-frappe-base-hsl)), hsl(var(--ctp-latte-rosewater-hsl)));
+      --grad-bkg: radial-gradient(farthest-side, hsl(var(--ctp-frappe-surface1-hsl)) 0%, hsl(var(--ctp-frappe-base-hsl)) 100%);
+}
+
+body{
+      font-family: 'Nunito', sans-serif;
+      font-size: var(--font-size-2);
+      font-weight: 400;
+      line-height: 1.55;
+      max-width: calc(min(90%, 2000px));
+      margin: auto;
+      color:  hsl(var(--ctp-latte-text-hsl));
+      background-color: hsl(var(--ctp-latte-mantle-hsl));
+}
+
+
+small{
+      font-size: var(--font-size-00);
+}
+
+
+/* main page */
+
+.logo{
+      max-width: 250px;
+      margin: 0 auto;
+}
+
+@media only screen and (max-width: 850px) {
+      .logo{
+            max-width: 200px;
+      }
+}
+
+
+.rainbow{
+      background: var(--grad2);
+      font-weight: 700;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+
+.rainbow2{
+      background: var(--grad);
+      font-weight: 700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  
+
+mark{
+      background-color: hsl(var(--ctp-mocha-mauve-hsl));
+      font-weight:300;
+  }
+
+
+.mark2{
+      background-color: hsl(var(--ctp-frappe-rosewater-hsl));
+      font-weight:300;
+  }
+  
+  a{
+      color:  hsl(var(--ctp-latte-text-hsl));
+      font-weight: 700;
+      text-decoration-line: underline;
+      text-decoration-thickness: 3pt;
+      text-decoration-color: hsl(var(--ctp-frappe-mauve-hsl));
+      margin: 0 -.25rem;
+      padding: 0 .25rem;
+  }
+  
+  a:hover{
+      background-color: hsl(var(--ctp-frappe-mauve-hsl));
+  }
+  
+
+
+  .rainbowGSSI{
+      background: var(--grad3);
+      font-weight: 700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .rainbowGSSI a{
+      text-decoration: none;
+  }
+  
+  .rainbowGSSI a:hover{
+      background: none;
+  }
+  
+  
+  .right ul{
+      margin-top: 0.5em;
+  }
+  
+  .right li{
+      list-style: none;
+  }
+  
+  .right li::before{
+          content: '';
+          display: inline-block;
+          height: 0.8em;
+          width: 1em;
+          background-image: url('anchor.svg');
+          background-size:contain; 	
+          background-repeat:no-repeat; 
+          margin-left: -20px;
+          margin-bottom: -2.5px;
+  }
+
+
+.blur{
+      margin: 0 auto;
+      margin-top: var(--size-3);
+      color: hsl(var(--ctp-frappe-base-hsl));
+      text-align: center;
+}
+
+
+@media  only screen  and (max-width: 850px) {
+      .blur{
+            margin-top: var(--size-1);
+            color: hsl(var(--ctp-latte-base-hsl));
+      }
+}

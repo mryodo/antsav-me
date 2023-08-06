@@ -1,0 +1,108 @@
+---
+import Navbar from "../components/navbar.astro";
+const {title = "AS" } = Astro.props;
+import '../styles/global.css'
+import { Icon } from 'astro-icon'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+      <main>
+      <div class="row">
+      <div class= "left">
+            <div class="sidecontent">
+                  <div class="left-bkg">
+                        <div class="left-wrapper">
+                              <div class="grid-container">
+                                    <div class="grid-child">
+                                          <div class='sayHi'>
+                                                <span class="rainbow">Hi! </span> <br/>
+                                                My name is <span class="rainbow">Anton Savostianov</span>
+                                          </div>
+                                    </div>
+                                    <div class="grid-child">
+                                          <Icon name ="face" class="logo"/>
+                                    </div>
+                              </div>
+                              <div class="name">
+                                    <span class="rainbow"> Anton Savostianov</span>
+                              </div>
+                              <div class="nametag">
+                                          Applied Math Researcher
+                              </div>
+                              <div class="soc2">
+                                    <div class = "soc-item2">
+                                            <Icon size="20" name="MaterialSymbolsCalendarMonthOutline" class="inline-icon"/> 26/04/95
+                                    </div>
+                                  <div class ="soc-item2">
+                                        <Icon size="20" name="SolarTemperatureLinear" class="inline-icon"/>  PhD Student
+                                  </div>
+                                  <div class ="soc-item2">
+                                          <Icon size="20" name="MaterialSymbolsHomePinOutline" class="inline-icon"/>  GSSI, Italy
+                                  </div>
+                              </div>
+                              <div class="emailSection">
+                                    <div class="quickWrap"><span class="rainbow"> <Icon size="15" name="lucide:feather" class="inline-icon"/> <span class="shortener"/></span>: </div>
+                                    <div class="emailHider">@<div class="emailCatch">botblocker@heartinternet.uk</div></div>
+                                    <br/>
+                                    <div class="quickWrap"><span class="rainbow"> <Icon size="15" name="ri:group-2-line" class="inline-icon"/> COMPiLE group </span>: </div>
+                                    <a href="num-gssi.github.io">num-gssi.github.io </a>
+                                    <br/>
+                                    <div class="quickWrap"><span class="rainbow"> <Icon size="15" name="mdi:mastodon" class="inline-icon"/> Mastodon </span>: </div>
+                                    <a rel="me" href="https://mathstodon.xyz/@mryodo">here</a>
+                                    <div class="soc">
+                                          <div class="soc-item">
+                                                <a href="https://github.com/mryodo"><Icon size="26" name="ph:github-logo-bold"  class="inline-icon"/></a>
+                                          </div>
+                                          <div class="soc-item">
+                                                <a href="https://twitter.com/mryodo"><Icon size="26" name="twitter"  class="inline-icon"/> </a>
+                                          </div>
+                                          <div class="soc-item">
+                                                <a href="https://t.me/mryodo"><Icon size="26" name="telegram"  class="inline-icon"/>  </a>
+                                          </div>
+                                          <div class="soc-item">
+                                                <a href="https://scholar.google.com/citations?user=E0nt-XYAAAAJ&hl=en"><Icon size="26" name="scholar"  class="inline-icon"/>  </a>
+                                          </div>
+                              </div>
+                              
+                                          </div>
+                        </div>
+                  </div>
+            </div>      
+            <div class="menu">   
+                  <ul>
+                        <input type="checkbox" id="collapse" checked/> 
+                        <label for="collapse"> <Icon name="here" width={15} class="inline-icon"/> You are at: {title}</label>    
+                               
+                        <li><a href="/"> <Icon name="emojione-monotone:top-hat" width={15} class="inline-icon"/> Home </a></li>
+                        <li><a href="/archive/"><Icon name="bi:archive" width={15} class="inline-icon"/> Archive </a></li>
+                        <li><a href="/papers/"> <Icon name="GameIconsPapers" width={15} class="inline-icon"/> Papers </a></li>
+                        <li><a href="/"><Icon name="paperclip" width={15} class="inline-icon"/> CV </a></li>
+                      </ul>
+                  
+            </div>
+      </div>
+      
+      <div class="right">
+            <slot />
+      </div>
+
+      </div>
+      
+      </main>
+                  <footer class="blur">
+                        <small> Copyright <span id="copyrightYear"></span> @mryodo</small>
+                  </footer>
+            <script>
+                  document.querySelector('#copyrightYear').textContent = new Date().getFullYear()
+            </script>
+      </body>
+   
+</html>

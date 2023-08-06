@@ -1,0 +1,51 @@
+---
+import papers from "./papers.json"
+import contacts from "./contacs.json"
+import { Icon } from 'astro-icon'
+---
+
+<div class="paper-wrapper">
+      {
+            papers.map(link => (
+                  <div class="paper">
+                        <div class="paper-title">{link.name}</div>
+                        <div class="person-wrapper">
+                        {
+                              link.authors.map(person =>(
+                                          <span class="person">
+                                                {person.name}
+                                                <a href={person.orcid}><Icon name="cib:orcid" width={14}/></a>
+                                                <a href={person.scholar}><Icon name="ph:graduation-cap-fill" width={14}/></a>
+                                          </span>
+                              ))
+                        }
+                        </div>
+                        <div class="paper-journal">
+                              {link.journal}, &nbsp; {link.year}
+                        </div>
+                        <div class="tag-wrapper">
+                              <div class="tags-left">
+                                    {
+                                          link.tags.map(tag =>(
+                                                <span class={tag}>
+                                                      {tag}
+                                                      </span>
+                                          ))
+                                    }
+                              </div>
+                              <div class="tags-right">
+                                    <span class="tag-code">
+                                          <a href={link.doi}>doi</a>
+                                    </span>
+                                    <span class="tag-code">
+                                          <a href={link.code}>code</a>
+                                    </span>
+                              </div>
+                        </div>
+                        <br/>
+                  </div>
+            ))
+      
+      
+      }
+</div>
