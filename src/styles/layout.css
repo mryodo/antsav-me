@@ -247,14 +247,9 @@
   .menu{
       margin: 0 auto;
       text-align: center;
-      width: 75%;
+      width: 90%;
   }
 
-  @media only screen and (max-width: 1000px){
-      .menu{
-            width:90%;
-      }
-  }
 
   .menu ul{
       list-style:none;  
