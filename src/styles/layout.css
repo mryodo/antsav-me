@@ -250,6 +250,11 @@
       width: 75%;
   }
 
+  @media only screen and (max-width: 1000px){
+      .menu{
+            width:90%;
+      }
+  }
 
   .menu ul{
       list-style:none;  
