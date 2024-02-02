@@ -1,5 +1,30 @@
 [
       {
+            "name": "Cholesky-like Preconditioner for Hodge Laplacians via Heavy Collapsible Subcomplex",
+            "authors": [
+                  {
+                        "name": "A.Savostianov",
+                        "orcid": "https://orcid.org/0000-0003-0126-3059",
+                        "scholar": "https://scholar.google.it/citations?user=E0nt-XYAAAAJ&hl=en"
+                  },
+                  {
+                        "name": "F.Tudisco",
+                        "orcid": "https://orcid.org/0000-0002-8150-4475",
+                        "scholar": "https://scholar.google.it/citations?hl=en&user=uND_5REAAAAJ"
+                  },
+                  {
+                        "name": "N.Guglielmi",
+                        "orcid": "https://orcid.org/0000-0003-3795-5225",
+                        "scholar": "https://scholar.google.it/citations?hl=en&user=wI-7JnMAAAAJ"
+                  }
+            ],
+            "journal": "arXiv",
+            "year": "2024",
+            "tags": ["netsci", "la"],
+            "doi": "https://doi.org/10.48550/arXiv.2401.15492",
+            "code": "https://github.com/COMPiLELab/HeCS"
+      },
+      {
             "name": "Quantifying the structural stability of simplicial homology",
             "authors": [
                   {
@@ -18,10 +43,10 @@
                         "scholar": "https://scholar.google.it/citations?hl=en&user=uND_5REAAAAJ"
                   }
             ],
-            "journal": "arXiv",
+            "journal": "Journal of Scientific Computing",
             "year": "2023",
             "tags": ["netsci", "la"],
-            "doi": "https://doi.org/10.48550/arXiv.2301.03627",
+            "doi": "https://doi.org/10.1007/s10915-023-02314-2",
             "code": "https://github.com/COMPiLELab/HOLaGraF"
       },
       {
