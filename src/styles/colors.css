@@ -1,0 +1,19 @@
+:root {
+      --imaginary-mauve: 322, 14%, 74%;
+      --coral-mantle: 15, 89%, 89%;
+      --white-lace: 35, 100%, 96%;
+      --luminiscient-blue: 188, 60%,78%;
+      --luminiscient-blue-darker: 188, 61%, 30%;
+      --majestic-mist: 230, 13%, 66%;
+      --naturally-calm: 229, 13%, 83%;
+      --bright-grey: 225, 11%, 93%;
+      --sombre-grey: 240, 12%, 39%;
+      --nocturnal-sea: 188, 84%, 23%;
+      --faded-rose: 0, 38%, 55%;
+      --anemone-white: 30, 36%, 95%;
+      --almind-beige: 32, 22%, 83%;
+      
+      --blur: clamp(56px, 10vw, 10px);
+      --gradient: linear-gradient( 90deg, hsl(var(--sombre-grey )) 20%, hsl(var(--luminiscient-blue)) 40%, hsl(var(--coral-mantle)) 30%, hsl(var(--sombre-grey )) 25% );
+      --size: clamp(128px, 18vw, 256px);
+}

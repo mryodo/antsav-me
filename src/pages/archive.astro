@@ -1,17 +1,28 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro'
-import {Icon} from 'astro-icon'
+import Layout from '../layouts/Layout.astro'
+import '../styles/reload.css';
+import TitleCard from '../components/TitleCard.astro';
+import SocialButtons from '../components/SocialButtons.astro';
+import { Icon } from 'astro-icon';
 import News from '../components/News.astro'
----
 
-<BaseLayout title="Archive | TS">
-      <h1 > <Icon width={19} name="bi:archive" class="inline-icon"/> Archive </h1>
+---
+<Layout title="Archive" >
+<div slot="left">
+      <h2 > <Icon width={19} name="bi:archive" class="inline-icon"/> Archive </h2>
 
       <p>
             Here you can find a quick lists of updates on my work. Enjoy!
       </p>     
 
-<div class="newsContainer">
-            <News/>
 </div>
-</BaseLayout>
+<div slot="center">
+	<h2 > <Icon width={19} name="refresh" class="inline-icon" /> Quick Updates   <a  href="/archive/" class="archiveRef">{/*<Icon width={19} name="bi:archive" class="inline-icon"/> */}&nbsp; all &nbsp;</a> </h2> 
+
+	<div class="newsContainer">
+		<News/>
+	</div>
+</div>
+	
+</Layout>
+

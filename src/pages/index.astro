@@ -1,12 +1,19 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro'
-import {Icon} from 'astro-icon'
+import Layout from '../layouts/Layout.astro'
+import '../styles/reload.css';
+import TitleCard from '../components/TitleCard.astro';
+import SocialButtons from '../components/SocialButtons.astro';
+import { Icon } from 'astro-icon';
 import News from '../components/News.astro'
+import Latex from '../components/Latex.astro'
 ---
+<Layout title="Home" >
+<div slot="left">
+	<h2>  Hello!</h2> 
 
-<BaseLayout title="Home | TS">
-	<h1> <Icon size="19" name="emojione-monotone:top-hat" class="inline-icon"/> About Me</h1> 
-	<p>Hello! I'm <span class="rainbow2"> Tony Savostianov</span>. Presently I'm doing my PhD in <mark>Mathematics in Natural Science</mark> at <span class="rainbowGSSI"><a href="https://gssi.it">Gran Sasso Science Institute</a></span> in <i> L'Aquila, Italy</i>.
+	<p> My name is <b> Tony Savostianov</b>. I am a <i>post-graduate researcher</i> at the <a href="https://www.netsci.rwth-aachen.de/go/id/lzwwm/?lidx=1">Computational Network Science Group</a> at RWTH, Aachen. </p>
+	<p>
+	Recently I've submitted my PhD in <mark>Mathematics in Natural Science</mark> at <span class="rainbowGSSI"><a href="https://gssi.it">Gran Sasso Science Institute</a></span> in <i> L'Aquila, Italy</i>.
 	</p>
 	<p>
 	My current work is focuses on the numerical methods for <mark>Network Sciences</mark>.  My previous work included:
@@ -15,12 +22,13 @@ import News from '../components/News.astro'
 	   <li> detection of 3D structure in <span class="mark2">chromatine</span> via CV methods</li>
 	   <li> quasi stationary points in <span class="mark2">spatially-heterogeneous models of biocommuinites</span></li>
 	</ul>
-	
-	</p>
-
-	<h1 > <Icon width={19} name="refresh" class="inline-icon" /> Quick Updates  &nbsp; <a  href="/archive/"><Icon width={19} name="bi:archive" class="inline-icon"/></a> </h1> 
+</div>
+<div slot="center">
+	<h2 > <Icon width={19} name="refresh" class="inline-icon" /> Quick Updates   <a  href="/archive/" class="archiveRef">{/*<Icon width={19} name="bi:archive" class="inline-icon"/> */}&nbsp; all &nbsp;</a> </h2> 
 
 	<div class="newsContainer2">
-            <News/>
+		<News/>
 	</div>
-</BaseLayout>
+</div>
+	
+</Layout>

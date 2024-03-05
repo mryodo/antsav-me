@@ -1,21 +1,48 @@
 ---
-import {Icon} from 'astro-icon'
-const navLinks = [
-      {
-            name: "Home",
-            url: '/',
-            style: 'transparent',
-      },
-      {
-            name: 'Papers',
-            url: '#',
-            style: 'transparent'
-      }
-]
+import { Astronav, MenuItems, MenuIcon, Dropdown, DropdownItems, DropdownSubmenu, OpenIcon, CloseIcon } from "astro-navbar";
+import { Icon } from 'astro-icon';
+import '../styles/navbar.css';
+const {title = "Home" } = Astro.props;
 ---
-
-<nav>
-      <div class="contrainer nav-container">
-            13
+      <Astronav>
+      <div class="navBar">     
+               <div class="navLogo">
+                  <a href="/"><Icon size="30" name="glasses" class="navLogoIcon"/> TS | {title} </a>
+               </div>
+               <MenuItems class="menu">
+                  <ul class="menuList" id="menu_list">
+                        <li class="menuListItem" onclick="location.href='/';" >Home</li>
+                        <li class="menuListItem" onclick="location.href='/papers';" >Papers</li>
+                        <li class="menuListItem" onclick="location.href='/archive';" >Archive</li>
+                        <li class="menuListItem" onclick="location.href='/public/docs/cv_new.pdf';" >CV</li>
+                  </ul>
+                  <button class="menuIcon" id="menuButton">
+                        <span id="openIcon" class="openIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="currentColor" d="M4 18h11c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1m0-5h8c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1M3 7c0 .55.45 1 1 1h11c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1m17.3 7.88L17.42 12l2.88-2.88a.996.996 0 1 0-1.41-1.41L15.3 11.3a.996.996 0 0 0 0 1.41l3.59 3.59c.39.39 1.02.39 1.41 0c.38-.39.39-1.03 0-1.42"/></svg>
+                        </span>
+                        <span id="closeIcon" class="closeIcon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 32 32"><path fill="currentColor" d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2m0 26C9.4 28 4 22.6 4 16S9.4 4 16 4s12 5.4 12 12s-5.4 12-12 12"/><path fill="currentColor" d="M21.4 23L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z"/></svg>
+                        </span>
+            </button>
+               </MenuItems>
       </div>
-</nav>
+      </Astronav>
+      <script>
+            const menuButton = document.getElementById("menuButton");
+import { log } from "astro/dist/core/logger/core";
+            var menuList = document.getElementById("menu_list");
+            var openIcon = document.getElementById("openIcon");
+            var closeIcon = document.getElementById("closeIcon");
+            menuButton.addEventListener("click", () => {
+                  if (menuList.style.display == 'none'){
+                        menuList.style.display = 'block';
+                        openIcon.style.display = 'none';
+                        closeIcon.style.display = 'flex';
+                  }
+                  else{
+                        menuList.style.display = 'none'
+                        closeIcon.style.display = 'none'
+                        openIcon.style.display = 'flex'
+                  }
+            });
+      </script>

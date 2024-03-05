@@ -1,0 +1,81 @@
+@import url("reload.css");
+
+.navBar{
+      
+      margin: 0 auto;
+      margin-top: 1rem;
+      width: min(100%, 900px);
+      display: flex;
+      justify-content: space-between;
+}
+
+.navLogo{
+      font-size: 1.25rem;
+}
+
+.navLogo a{
+      text-decoration: none;
+      color: hsl(var(--sombre-grey));
+}
+
+.navLogoIcon{
+      display: inline-block;
+      vertical-align:middle;  
+}
+
+.menu{
+      display: flex;
+      justify-content: top;
+}
+
+.navBar button{
+      border: none;
+      background: none;     
+}
+
+
+
+.menuList{
+      display: flex;
+      list-style-type: none;
+      /*margin-left: -2rem;*/
+      vertical-align: top;
+      margin-top: 0rem;
+}
+
+@media only screen and (min-width: 600px) {
+      .navBar button{
+            display: none;
+      }
+      .menuList{
+            display: flex !important;
+      }
+}
+
+@media only screen and (max-width: 600px) {
+      .menuList{
+            display:none;
+      }
+}
+
+
+.menuListItem{
+      margin-right: 0.1rem;
+      cursor: pointer;
+      padding:5px 10px;
+}
+
+.menuListItem:hover{
+      
+      border-radius: 0.5rem;
+      background-color: hsl(var(--bright-grey));
+}
+
+.openIcon{
+      display: flex;
+}
+
+.closeIcon{
+      display: none;
+      margin-top: -4.5rem;
+}

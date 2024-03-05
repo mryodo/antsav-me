@@ -1,15 +1,28 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro'
+import Layout from '../layouts/Layout.astro'
+import '../styles/reload.css';
+import TitleCard from '../components/TitleCard.astro';
+import SocialButtons from '../components/SocialButtons.astro';
 import PaperList from '../components/Paper.astro'
-import {Icon} from 'astro-icon'
----
+import { Icon } from 'astro-icon';
+import News from '../components/News.astro'
 
-<BaseLayout title="Papers | TS">
-      <h1> <Icon name= "GameIconsPapers" width={25} class="inline-icon"/> Publications </h1>
+---
+<Layout title="Publications" >
+<div slot="left">
+      <h2> <Icon name= "GameIconsPapers" width={25} class="inline-icon"/> Publications </h2>
      
       <p>
             Here is the list of my publications. In case you are interested in my conferences talks, please search the archive page.
-      </p>
-      
-      <PaperList/>
-</BaseLayout>
+      </p>  
+
+</div>
+<div slot="center">
+	<PaperList/>
+</div>
+	
+</Layout>
+
+
+
+

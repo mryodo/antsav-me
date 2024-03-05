@@ -1,0 +1,40 @@
+@import url('colors.css');
+
+.socialButtonWrapper{
+      margin: 0 auto;
+      width: 300px;
+      margin-top: 0.75rem;
+      text-align: center;
+      /*margin-left: 0.5em;
+      margin-right: 1em;*/
+}
+
+.socialButton{
+      background-color: hsl(var(--sombre-grey));
+      border-radius: 0.75rem;
+      width: 45px;
+      line-height: 2.25;
+      color: hsl(var(--white-lace));
+      padding: 5px;
+      padding-bottom: 10px;
+      box-shadow: hsl(var(--sombre-grey)) 0px 3px 8px;
+      -webkit-transition: background 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); /* For Safari 3.0 to 6.0 */
+      transition: background 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.socialButton:hover{
+      background-color: hsl(var(--white-lace));
+      color: hsl(var(--sombre-grey));
+}
+
+.socialButton a{
+      color: hsl(var(--white-lace));
+}
+.socialButton a:hover{
+      text-decoration: none;
+}
+
+.socialButton .inline-icon{
+      display: inline-block;
+      vertical-align:middle;
+}

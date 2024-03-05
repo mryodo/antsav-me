@@ -1,5 +1,5 @@
 ---
-import Navbar from "../components/navbar.astro";
+import Navbar from "../components/NavBar.astro";
 const {title = "AS" } = Astro.props;
 import '../styles/global.css'
 import { Icon } from 'astro-icon'
@@ -100,9 +100,9 @@ import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
       </div>
       
       </main>
-                  <footer class="blur">
-                        <small> Copyright <span id="copyrightYear"></span> @mryodo</small>
-                  </footer>
+            <footer class="blur">
+                  <small> Copyright <span id="copyrightYear"></span> @mryodo</small>
+            </footer>
             <script>
                   document.querySelector('#copyrightYear').textContent = new Date().getFullYear()
             </script>

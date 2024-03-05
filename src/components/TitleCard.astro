@@ -1,0 +1,30 @@
+---
+import { Image } from 'astro:assets';
+import '../styles/titlecard.css';
+import photo from 'photo.png';
+import { Icon } from 'astro-icon';
+---
+
+<div class="titleCardBackground">
+      <div class="titleCardGradient">
+            <div class="titleCardContentWrap">
+                  <img class="titleCardPhoto" src="/photo.png">
+                  {/*<Image src="photo.png"/>*/}
+                  <div class="titleCardName">
+                        Tony Savostianov
+                  </div>
+                  <div class="titleCardTag">
+                        Applied Math Researcher,
+                        <br/>
+                        Network Science
+                  </div>
+                  <div class="titleCardDescription">
+                        <Icon size="25" name="SolarTemperatureLinear" class="titleCardIcon"/> Post-grad Researcher
+                        <br/>
+                        <Icon size="20" name="MaterialSymbolsHomePinOutline" class="titleCardIcon"/>  RWTH, Aachen
+                        <br/>
+                        <Icon size="20" name="lucide:feather" class="titleCardIcon"/> <div class="emailHider">@<div class="emailCatch">botblocker@heartinternet.uk</div></div>
+                  </div>
+            </div>
+      </div>
+</div>

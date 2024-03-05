@@ -1,0 +1,104 @@
+@import url('colors.css');
+
+.titleCardBackground{
+      margin: 0 auto;
+      width: 300px;
+      background-color: hsl(var(--sombre-grey ));
+      border: 1px solid hsl(var(--naturally-calm));
+      border-radius: 3rem;
+      
+      box-shadow: hsl(var(--naturally-calm)) 0px 3px 8px;
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/*.titleCardBackground:hover {
+      -webkit-transform: scale(1.01, 1.01);
+      transform: scale(1.01, 1.01);
+}*/
+    
+/*.titleCardBackground:hover::after {
+        opacity: 0;
+}*/
+
+.titleCardGradient{
+      margin: 0 auto;
+      width: 100%;
+      background-image: var(--gradient);
+      border-radius: 50%;
+}
+
+.titleCardContentWrap{
+      padding: 15px 15px;
+      backdrop-filter: blur(var(--blur)); 
+      border-radius: 3rem;
+      color: hsl(var(--white-lace));
+      text-align: center;
+}
+
+.titleCardName{
+      margin: 0 auto;
+      font-weight: 300;
+      font-size: 1.25rem;
+}
+
+.titleCardPhoto{
+      margin-top: 1rem;
+      width: min(75%, 300px);
+      border-radius: 3rem;
+      box-shadow: hsl(var(--sombre-grey)) 0px 3px 8px;
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.titleCardPhoto:hover {
+      -webkit-transform: scale(1.01, 1.01);
+      transform: scale(1.01, 1.01);
+}
+
+.titleCardTag{
+      color: hsl(var(--sombre-grey ));
+      margin-top: 5px;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-weight: 400;
+      padding: 5px;
+      line-height: 1.1;
+      background-color: hsl(var(--coral-mantle));
+      border-radius: 3rem;
+      box-shadow: hsl(var(--sombre-grey)) 0px 3px 8px;
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); 
+}
+.titleCardTag:hover {
+      -webkit-transform: scale(1.01, 1.01);
+      transform: scale(1.01, 1.01);
+}
+
+.titleCardIcon{
+      display: inline-block;
+      vertical-align:middle;
+}
+
+.titleCardDescription{
+      margin-top: 0.75rem;
+      margin-bottom: 1rem;
+      margin-left: 10pt;
+      margin-right: 10pt;
+      /*text-align: left;*/
+      font-size: 0.95em;
+}
+
+ 
+.emailHider{ 
+      display: inline;
+      /*color: hsl(var(--));*/
+}
+
+.emailHider::before{
+      content: 'anton.savostianov';
+      margin-left: 0pt;
+      margin-top: -20pt;
+}
+.emailHider::after{
+      content: '\A gssi.it';
+}
+.emailCatch{
+      display: none;
+}

@@ -31,21 +31,34 @@
 }
 
 .newsDate{
-      color: hsl(var(--ctp-frappe-surface2-hsl));
+      color: hsl(var(--majestic-mist));
       grid-area: date;
       grid-row: auto;
   }
   
 
   .newsText{
+      color: hsl(var(--sombre-grey));
       grid-area: text;
       grid-row: auto;
-      border-bottom: dashed 1pt hsl(var(--ctp-latte-surface2-hsl));    
+      border-bottom: dashed 1pt hsl(var(--majestic-mist));    
+      padding-bottom: 0.5em;
       margin-bottom: 1em;
   }
   
-  .newsText mark{
-      background-color: hsl(var(--ctp-frappe-rosewater-hsl));
-      font-weight:400; 
+
+  .newsText mark{ 
+      color: hsl(var(--nocturnal-sea));
+      background-color: none !important;
+      background: none;
+      font-weight: 500;
   }
-  
+
+  .newsText b{ 
+      font-weight: 500
+}
+
+  .newsText .mark2{
+      font-weight: 400;
+      color: hsl(var(--faded-rose));
+  }

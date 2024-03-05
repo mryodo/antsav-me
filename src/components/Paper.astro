@@ -2,6 +2,8 @@
 import papers from "./papers.json"
 import contacts from "./contacs.json"
 import { Icon } from 'astro-icon'
+import '../styles/papers.css'
+import Latex from './Latex.astro'
 ---
 
 <div class="paper-wrapper">
@@ -23,6 +25,7 @@ import { Icon } from 'astro-icon'
                         <div class="paper-journal">
                               {link.journal}, &nbsp; {link.year}
                         </div>
+                        <div class="paper-abstract" set:html={link.abstract} />
                         <div class="tag-wrapper">
                               <div class="tags-left">
                                     {
