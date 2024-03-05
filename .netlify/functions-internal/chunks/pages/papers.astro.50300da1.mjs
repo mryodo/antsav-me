@@ -1,0 +1,300 @@
+import { c as createAstro, a as createComponent, r as renderTemplate, m as maybeRenderHead, e as addAttribute, f as renderComponent, u as unescapeHTML } from '../astro.bb72bab2.mjs';
+import { $ as $$Icon, b as $$Layout } from './archive.astro.1a70c4bb.mjs';
+/* empty css                             *//* empty css                            */import 'cookie';
+import 'kleur/colors';
+import '@astrojs/internal-helpers/path';
+import 'path-to-regexp';
+import 'mime';
+import 'string-width';
+import 'html-escaper';
+import 'svgo';
+/* empty css                             */
+const papers = [
+	{
+		name: "Cholesky-like Preconditioner for Hodge Laplacians via Heavy Collapsible Subcomplex",
+		authors: [
+			{
+				name: "A.Savostianov",
+				orcid: "https://orcid.org/0000-0003-0126-3059",
+				scholar: "https://scholar.google.it/citations?user=E0nt-XYAAAAJ&hl=en"
+			},
+			{
+				name: "F.Tudisco",
+				orcid: "https://orcid.org/0000-0002-8150-4475",
+				scholar: "https://scholar.google.it/citations?hl=en&user=uND_5REAAAAJ"
+			},
+			{
+				name: "N.Guglielmi",
+				orcid: "https://orcid.org/0000-0003-3795-5225",
+				scholar: "https://scholar.google.it/citations?hl=en&user=wI-7JnMAAAAJ"
+			}
+		],
+		journal: "arXiv",
+		year: "2024",
+		tags: [
+			"netsci",
+			"la"
+		],
+		doi: "https://doi.org/10.48550/arXiv.2401.15492",
+		code: "https://github.com/COMPiLELab/HeCS",
+		abstract: "Techniques based on k-th order Hodge Laplacian operators $L_k$ are widely used to describe the topology as well as the governing dynamics of high-order systems modeled as simplicial complexes. In all of them, it is required to solve a number of least square problems with $L_k$ as coefficient matrix, for example in order to compute some portions of the spectrum or integrate the dynamical system. In this work, we introduce the notion of optimal collapsible subcomplex and we present a fast combinatorial algorithm for the computation of a sparse Cholesky-like preconditioner for $L_k$ that exploits the topological structure of the simplicial complex. The performance of the preconditioner is tested for conjugate gradient method for least square problems (CGLS) on a variety of simplicial complexes with different dimensions and edge densities. We show that, for sparse simplicial complexes, the new preconditioner reduces significantly the condition number of $L_k$ and performs better than the standard incomplete Cholesky factorization."
+	},
+	{
+		name: "Contractivity of neural ODEs: an eigenvalue optimization problem",
+		authors: [
+			{
+				name: "N.Guglielmi",
+				orcid: "https://orcid.org/0000-0003-3795-5225",
+				scholar: "https://scholar.google.it/citations?hl=en&user=wI-7JnMAAAAJ"
+			},
+			{
+				name: "A.De Marinis"
+			},
+			{
+				name: "F.Tudisco",
+				orcid: "https://orcid.org/0000-0002-8150-4475",
+				scholar: "https://scholar.google.it/citations?hl=en&user=uND_5REAAAAJ"
+			},
+			{
+				name: "A.Savostianov",
+				orcid: "https://orcid.org/0000-0003-0126-3059",
+				scholar: "https://scholar.google.it/citations?user=E0nt-XYAAAAJ&hl=en"
+			}
+		],
+		journal: "arXiv",
+		year: 2024,
+		tags: [
+			"dnn",
+			"la"
+		],
+		doi: "https://doi.org/10.48550/arXiv.2402.130922",
+		code: "",
+		abstract: "We propose a novel methodology to solve a key eigenvalue optimization problem which arises in the contractivity analysis of neural ODEs. When looking at contractivity properties of a one layer weight-tied neural ODE $\\dot{u}(t)=\\sigma(Au(t)+b)$ (with $u ,b \\in \\mathbb{R}^n$, A is a given $n \\times n$ matrix, $\\sigma : \\mathbb{R} \\to \\mathbb{R}_+$ denotes an activation function and for a vector $z \\in \\mathbb{R}^n$, $\\sigma(z)\\in \\mathbb{R}^n$ has to be interpreted entry-wise), we are led to study the logarithmic norm of a set of products of type $DA$, where $D$ is a diagonal matrix such that $\\mathrm{diag}(D) \\in \\sigma'(\\mathbb{R}^n)$. Specifically, given a real number $c$ (usually $c=0$), the problem consists in finding the largest positive interval $\\chi \\subset [0,\\infty)$ such that the logarithmic norm $\\mu(DA)\\le c$ for all diagonal matrices $D$ with $D_{ii}\\in\\chi$. We propose a two-level nested methodology: an inner level where, for a given $\\chi$, we compute an optimizer $D^*(\\chi)$ by a gradient system approach, and an outer level where we tune $\\chi$ so that the value $c$ is reached by $\\mu(D^*(\\chi)A$). We extend the proposed two-level approach to the general multilayer, and possibly time-dependent, case $u'(t)=\\sigma(A_k(t)…\\sigma(A_1(t)u(t)+b_1(t))…+b_k(t))$ and we propose several numerical examples to illustrate its behaviour, including its stabilizing performance on a one-layer neural ODE applied to the classification of the MNIST handwritten digits dataset."
+	},
+	{
+		name: "Quantifying the structural stability of simplicial homology",
+		authors: [
+			{
+				name: "N.Guglielmi",
+				orcid: "https://orcid.org/0000-0003-3795-5225",
+				scholar: "https://scholar.google.it/citations?hl=en&user=wI-7JnMAAAAJ"
+			},
+			{
+				name: "A.Savostianov",
+				orcid: "https://orcid.org/0000-0003-0126-3059",
+				scholar: "https://scholar.google.it/citations?user=E0nt-XYAAAAJ&hl=en"
+			},
+			{
+				name: "F.Tudisco",
+				orcid: "https://orcid.org/0000-0002-8150-4475",
+				scholar: "https://scholar.google.it/citations?hl=en&user=uND_5REAAAAJ"
+			}
+		],
+		journal: "Journal of Scientific Computing",
+		year: "2023",
+		tags: [
+			"netsci",
+			"la"
+		],
+		doi: "https://doi.org/10.1007/s10915-023-02314-2",
+		code: "https://github.com/COMPiLELab/HOLaGraF",
+		abstract: "The homology groups of a simplicial complex reveal fundamental properties of the topology of the data or the system and the notion of topological stability naturally poses an important yet not fully investigated question. In the current work, we study the stability in terms of the smallest perturbation sufficient to change the dimensionality of the corresponding homology group. Such definition requires an appropriate weighting and normalizing procedure for the boundary operators acting on the Hodge algebra's homology groups. Using the resulting boundary operators, we then formulate the question of structural stability as a spectral matrix nearness problem for the corresponding higher-order graph Laplacian. We develop a bi-level optimization procedure suitable for the formulated matrix nearness problem and illustrate the method's performance on a variety of synthetic quasi-triangulation datasets and transportation networks."
+	},
+	{
+		name: "Dynamics of Phase Synchronization between Solar Polar Magnetic Fields Assessed with Van Der Pol and Kuramoto Models",
+		authors: [
+			{
+				name: "A.Savostianov",
+				orcid: "https://orcid.org/0000-0003-0126-3059",
+				scholar: "https://scholar.google.it/citations?user=E0nt-XYAAAAJ&hl=en"
+			},
+			{
+				name: "A.Shapoval",
+				orcid: "https://orcid.org/0000-0001-5340-1930",
+				scholar: "https://scholar.google.it/citations?hl=en&user=PucdzTkAAAAJ"
+			},
+			{
+				name: "M.Shnirman",
+				orcid: "https://orcid.org/0000-0001-7220-1424",
+				scholar: ""
+			}
+		],
+		journal: "Entropy, 22(9), 945",
+		year: "2020",
+		tags: [
+			"sun",
+			"oscillators"
+		],
+		doi: "https://doi.org/10.3390/e22090945",
+		code: "https://github.com/mryodo/sun.activity",
+		abstract: "We establish the similarity in two model-based reconstructions of the coupling between the polar magnetic fields of the Sun represented by the solar faculae time series. The reconstructions are inferred from the pair of the coupled oscillators modelled with the Van der Pol and Kuramoto equations. They are associated with the substantial simplification of solar dynamo models and, respectively, a simple ad hoc model reproducing the phenomenon of synchronization. While the polar fields are synchronized, both of the reconstruction procedures restore couplings, which attain moderate values and follow each other rather accurately as the functions of time. We also estimate the evolution of the phase difference between the polar fields and claim that they tend to move apart more quickly than approach each other."
+	},
+	{
+		name: "Reconstruction of the coupling between solar proxies: When approaches based on Kuramoto and Van der Pol models agree with each other",
+		authors: [
+			{
+				name: "A.Savostianov",
+				orcid: "https://orcid.org/0000-0003-0126-3059",
+				scholar: "https://scholar.google.it/citations?user=E0nt-XYAAAAJ&hl=en"
+			},
+			{
+				name: "A.Shapoval",
+				orcid: "https://orcid.org/0000-0001-5340-1930",
+				scholar: "https://scholar.google.it/citations?hl=en&user=PucdzTkAAAAJ"
+			},
+			{
+				name: "M.Shnirman",
+				orcid: "https://orcid.org/0000-0001-7220-1424",
+				scholar: ""
+			}
+		],
+		journal: "Communications in Nonlinear Science and Numerical Simulation 83",
+		year: "2020",
+		tags: [
+			"sun",
+			"oscillators"
+		],
+		doi: "https://doi.org/10.1016/j.cnsns.2019.105149",
+		code: "https://github.com/mryodo/sun.activity",
+		asbtract: "The objective of this paper is to establish that algorithms, which reconstruct the coupling between solar proxies based on the properties of the Kuramoto equations, and algorithms, based on the van der Pol equations, might produce similar estimates. To this end, the inverse problem is formulated as follows: reconstruct the coupling based on the solutions of the corresponding equations. For either system of the equations we construct an algorithm solving the inverse problem and establish that there exists a range of moderate values of the correlation such that the algorithms produce practically identical coupling within the established range. The lower boundary of this range is dependent on the half-difference of the oscillators’ frequencies. Then, we apply the two reconstruction algorithms to solar index ISSN and the geomagnetic index aa, which are proxies to the toroidal and poloidal magnetic fields of the Sun respectively. Their correlation belongs within the range that yields the proximity of the coupling reconstructed with all solar cycles from 11 till 23 except 20 and, possibly, 21. Our finding relate the reconstruction of characteristics of solar activity inferred by Blanter et al [Sol. Phys. 2014, 289, 4309; Sol. Phys. 2016, 291, 1003] from the Kuramoto model to the state of the art solar dynamo theory based on the magnetohydrodynamic equations."
+	},
+	{
+		name: "The inverse problem for the Kuramoto model of two nonlinear coupled oscillators driven by applications to solar activity",
+		authors: [
+			{
+				name: "A.Savostianov",
+				orcid: "https://orcid.org/0000-0003-0126-3059",
+				scholar: "https://scholar.google.it/citations?user=E0nt-XYAAAAJ&hl=en"
+			},
+			{
+				name: "A.Shapoval",
+				orcid: "https://orcid.org/0000-0001-5340-1930",
+				scholar: "https://scholar.google.it/citations?hl=en&user=PucdzTkAAAAJ"
+			},
+			{
+				name: "M.Shnirman",
+				orcid: "https://orcid.org/0000-0001-7220-1424",
+				scholar: ""
+			}
+		],
+		journal: "Physica D: Nonlinear Phenomena 401",
+		year: "2020",
+		tags: [
+			"sun",
+			"oscillators"
+		],
+		doi: "https://doi.org/10.1016/j.physd.2019.132160",
+		code: "https://github.com/mryodo/sun.activity",
+		abstract: "Recent advances in the applications of the Kuramoto model to a wide range of real-life processes require the reconstruction of processes’ parameters from observations. This paper explores the inverse problem for the Kuramoto model of two nonlinear oscillators with slowly varying coupling in the form of a single-step function, sine-wave, and auto-regressive process with a view to deriving the basic properties of the reconstruction procedure, that is the connection of the reconstruction efficiency with the coupling strength and estimates of the time it takes for a system to phase-lock. By investigating the de-synchronization of the solar faculae series, which represent signals coming from the northern and southern solar hemispheres, we relate the de-synchronization of the series, which occurred in the early 1960s to the changes in the coupling of the underlying real oscillators."
+	},
+	{
+		name: "Prediction of Dictyostelium discoideum chromatin loops from genomic sequence",
+		authors: [
+			{
+				name: "V.Savinova",
+				orcid: "",
+				scholar: ""
+			},
+			{
+				name: "A.Savostianov",
+				orcid: "https://orcid.org/0000-0003-0126-3059",
+				scholar: "https://scholar.google.it/citations?user=E0nt-XYAAAAJ&hl=en"
+			},
+			{
+				name: "O.Tsoy, S.Ulyanov, S.Razin, M.Gelfand, E.Khrameeva, A.Galitsyna",
+				orcid: "",
+				scholar: ""
+			}
+		],
+		journal: "proceedings",
+		year: "2019",
+		tags: [
+			"dna"
+		],
+		doi: "https://doi.org/10.1016/j.physd.2019.132160",
+		code: "https://github.com/mryodo/sun.activity",
+		abstract: "DNA loops are the positions of contacts of DNA strands, representing one of the key structures of chromatin [2]. There are few experimental approaches to study DNA loops, for example, high throughput chromosomes conformation capture, or Hi-C [3]. However, this technique is expensive and time-consuming; thus machine learning approaches emerge for the prediction of loops positions. Furthermore, contemporary machine learning methods allow biological interpretation of learned features and properties [4, 5]. DNA loops are formed during DNA folding and are related to gene expression mechanisms. Thus DNA loops prediction from genomic sequence is an important task for understanding the chromatin structure. Similar loops were discovered by Hi-C on D. discoideum. In the current project, we aimed to develop a model for prediction of D. discoideum DNA loops from its genomic sequence and its properties."
+	},
+	{
+		name: "Nontrivial stationary points of two-species self-structured communities",
+		authors: [
+			{
+				name: "A.Savostianov",
+				orcid: "https://orcid.org/0000-0003-0126-3059",
+				scholar: "https://scholar.google.it/citations?user=E0nt-XYAAAAJ&hl=en"
+			},
+			{
+				name: "A.Nikitin",
+				orcid: "https://orcid.org/0000-0002-1401-6682",
+				scholar: "https://scholar.google.it/citations?hl=en&user=pej2J50AAAAJ&view_op=list_works&sortby=pubdate"
+			}
+		],
+		journal: "Moscow University Computational Mathematics and Cybernetics",
+		year: "2017",
+		tags: [
+			"bio"
+		],
+		doi: "https://doi.org/10.3103/S0278641917030050",
+		code: "https://github.com/mryodo/nonlinSolver2sp",
+		abstract: "The two-species model of self-structured stationary biological communities proposed by U. Dieckmann and R. Law is considered. A way of investigating the system of integro-differential equations describing the model equilibrium is developed, nontrivial stationary points are found, and constraints on the model parameter space resulting in similar stationary points are studied. The results are applied to a number of widely known biological scenarios."
+	}
+];
+
+const $$Astro$1 = createAstro();
+const $$Paper = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
+  Astro2.self = $$Paper;
+  return renderTemplate`${maybeRenderHead()}<div class="paper-wrapper">
+      ${papers.map((link) => renderTemplate`<div class="paper">
+                        <div class="paper-title">${link.name}</div>
+                        <div class="person-wrapper">
+                        ${link.authors.map((person) => renderTemplate`<span class="person">
+                                                ${person.name}
+                                                <a${addAttribute(person.orcid, "href")}>${renderComponent($$result, "Icon", $$Icon, { "name": "cib:orcid", "width": 14 })}</a>
+                                                <a${addAttribute(person.scholar, "href")}>${renderComponent($$result, "Icon", $$Icon, { "name": "ph:graduation-cap-fill", "width": 14 })}</a>
+                                          </span>`)}
+                        </div>
+                        <div class="paper-journal">
+                              ${link.journal}, &nbsp; ${link.year}
+                        </div>
+                        <div class="paper-abstract">${unescapeHTML(link.abstract)}</div>
+                        <div class="tag-wrapper">
+                              <div class="tags-left">
+                                    ${link.tags.map((tag) => renderTemplate`<span${addAttribute(tag, "class")}>
+                                                      ${tag}
+                                                      </span>`)}
+                              </div>
+                              <div class="tags-right">
+                                    <span class="tag-code">
+                                          <a${addAttribute(link.doi, "href")}>doi</a>
+                                    </span>
+                                    <span class="tag-code">
+                                          <a${addAttribute(link.code, "href")}>code</a>
+                                    </span>
+                              </div>
+                        </div>
+                        <br>
+                  </div>`)}
+</div>`;
+}, "/Users/mryodo/astro2/evolved-earth/src/components/Paper.astro", void 0);
+
+const $$Astro = createAstro();
+const $$Papers = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
+  Astro2.self = $$Papers;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Publications" }, { "center": ($$result2) => renderTemplate`${maybeRenderHead()}<div>
+	${renderComponent($$result2, "PaperList", $$Paper, {})}
+</div>`, "left": ($$result2) => renderTemplate`<div>
+      <h2> ${renderComponent($$result2, "Icon", $$Icon, { "name": "GameIconsPapers", "width": 25, "class": "inline-icon" })} Publications </h2>
+     
+      <p>
+            Here is the list of my publications. In case you are interested in my conferences talks, please search the archive page.
+      </p>  
+
+</div>` })}`;
+}, "/Users/mryodo/astro2/evolved-earth/src/pages/papers.astro", void 0);
+
+const $$file = "/Users/mryodo/astro2/evolved-earth/src/pages/papers.astro";
+const $$url = "/papers";
+
+export { $$Papers as default, $$file as file, $$url as url };
