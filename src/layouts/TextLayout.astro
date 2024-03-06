@@ -1,0 +1,54 @@
+---
+import NavBar from "../components/navbar.astro";
+const {title = "Home" } = Astro.props;
+import '../styles/reload.css'
+import { Icon } from 'astro-icon'
+import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
+import TitleCard from '../components/TitleCard.astro';
+import SocialButtons from '../components/SocialButtons.astro';
+import Latex from '../components/Latex.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+	      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+            
+            <script type="text/x-mathjax-config">
+                  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+                </script>
+            <script type="text/javascript"
+                  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+            </script>
+
+	      <meta name="viewport" content="width=device-width" />
+	      <meta name="generator" content={Astro.generator} />
+	      <title>{title}</title>
+	      <GoogleFontsOptimizer url="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+	      </GoogleFontsOptimizer>
+	</head>
+	<body>
+      <main>
+            <NavBar title = {title}/>
+            <div class="flex-container">
+                  <div class="flex-item-left">
+                        <slot />
+                  </div>
+                  <div class="flex-item-right">
+                        <TitleCard/>
+		            <SocialButtons/>
+                  </div>
+            </div>
+            <div class="center-container">
+                  <slot name="center"/> 
+            </div>
+      </main>
+      <footer>
+            <small> Copyright <span id="copyrightYear"></span> @mryodo</small>
+      </footer>
+      <script>
+            document.querySelector('#copyrightYear').textContent = new Date().getFullYear()
+      </script>
+      </body>
+   
+</html>
