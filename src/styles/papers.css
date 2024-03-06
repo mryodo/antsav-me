@@ -49,11 +49,11 @@
 
 [astro-icon="cib:orcid"]{
       /*color: hsl(var(--lime-6-hsl));*/
-      background: ;
+      /*background: ;*/
 }
 
 .paper-journal{
-      font-size: var(--font-size-1);
+      font-size: 0.9rem;
       margin-top: var(--size-00);
       color: hsl(var(--gray-6-hsl));
       line-height: 1.1;
@@ -81,7 +81,7 @@
       padding-left: var(--size-2);
       padding-right: var(--size-2);
       padding-bottom: var(--size-0);
-      font-size: var(--font-size-1);
+      font-size: var(--font-size-0);
       color: hsl(var(--white-lace));
       background-color: hsl(var(--luminiscient-blue-darker));
       margin-right: var(--size-2);
@@ -92,7 +92,7 @@
       padding-left: var(--size-2);
       padding-right: var(--size-2);
       padding-bottom: var(--size-0);
-      font-size: var(--font-size-1);
+      font-size: var(--font-size-0);
       color: hsl(var(--sombre-grey));
       background-color: hsl(var(--anemone-white));
       margin-right: var(--size-2);
@@ -104,7 +104,7 @@
       padding-left: var(--size-2);
       padding-right: var(--size-2);
       padding-bottom: var(--size-0);
-      font-size: var(--font-size-1);
+      font-size: var(--font-size-0);
       color: hsl(var(--sombre-grey));
       background-color: hsl(var(--imaginary-mauve));
       margin-right: var(--size-2);
@@ -115,7 +115,7 @@
       padding-left: var(--size-2);
       padding-right: var(--size-2);
       padding-bottom: var(--size-0);
-      font-size: var(--font-size-1);
+      font-size: var(--font-size-0);
       color: hsl(var(--white-lace));
       background-color: hsl(var(--faded-rose));
       margin-right: var(--size-2);
@@ -126,7 +126,7 @@
       padding-left: var(--size-2);
       padding-right: var(--size-2);
       padding-bottom: var(--size-0);
-      font-size: var(--font-size-1);
+      font-size: var(--font-size-0);
       color: hsl(var(--white-lace));
       background-color: hsl(var(--majestic-mist));
       margin-right: var(--size-2);
@@ -137,7 +137,7 @@
       padding-left: var(--size-2);
       padding-right: var(--size-2);
       padding-bottom: var(--size-0);
-      font-size: var(--font-size-1);
+      font-size: var(--font-size-0);
       color: hsl(var(--white-lace));
       background-color: hsl(var(--sombre-grey));
       margin-right: var(--size-2);
@@ -148,7 +148,7 @@
       padding-left: var(--size-2);
       padding-right: var(--size-2);
       padding-bottom: var(--size-0);
-      font-size: var(--font-size-1);
+      font-size: var(--font-size-0);
       color: hsl(var(--sombre-grey));
       background-color: hsl(var(--coral-mantle));
       margin-right: var(--size-2);
@@ -159,7 +159,7 @@
       padding-left: var(--size-2);
       padding-right: var(--size-2);
       padding-bottom: var(--size-0);
-      font-size: var(--font-size-1);
+      font-size: var(--font-size-0);
       color: hsl(var(--sombre-grey));
       margin-right: var(--size-2);
       border: 1px solid hsl(var(--sombre-grey));
