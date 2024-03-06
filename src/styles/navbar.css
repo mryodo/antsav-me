@@ -73,9 +73,11 @@
 
 .openIcon{
       display: flex;
+      color: hsl(var(--sombre-grey));
 }
 
 .closeIcon{
       display: none;
       margin-top: -4.5rem;
+      color: hsl(var(--sombre-grey));
 }
