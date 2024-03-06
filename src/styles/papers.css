@@ -9,6 +9,15 @@
       transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
+@media (max-width: 700px) {
+    .paper{
+      width: calc(100% + 1rem);
+      margin-left: -1rem;
+      margin-right: 0rem;
+    }
+}
+
+
 /*.paper:hover{
       -webkit-transform: scale(1.01, 1.01);
       transform: scale(1.01, 1.01);
