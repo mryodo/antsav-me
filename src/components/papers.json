@@ -26,6 +26,32 @@
             "abstract": "Techniques based on k-th order Hodge Laplacian operators $L_k$ are widely used to describe the topology as well as the governing dynamics of high-order systems modeled as simplicial complexes. In all of them, it is required to solve a number of least square problems with $L_k$ as coefficient matrix, for example in order to compute some portions of the spectrum or integrate the dynamical system. In this work, we introduce the notion of optimal collapsible subcomplex and we present a fast combinatorial algorithm for the computation of a sparse Cholesky-like preconditioner for $L_k$ that exploits the topological structure of the simplicial complex. The performance of the preconditioner is tested for conjugate gradient method for least square problems (CGLS) on a variety of simplicial complexes with different dimensions and edge densities. We show that, for sparse simplicial complexes, the new preconditioner reduces significantly the condition number of $L_k$ and performs better than the standard incomplete Cholesky factorization."
       },
       {
+            "name": "Impact of coupling on the road to synchronization of two coupled Van der Pol oscillators",
+            "authors": [
+                  {
+                        "name": "A.Savostianov",
+                        "orcid": "https://orcid.org/0000-0003-0126-3059",
+                        "scholar": "https://scholar.google.it/citations?user=E0nt-XYAAAAJ&hl=en"
+                  },
+                  {
+                        "name": "A.Shapoval",
+                        "orcid": "https://orcid.org/0000-0001-5340-1930",
+                        "scholar": "https://scholar.google.it/citations?hl=en&user=PucdzTkAAAAJ"
+                  },
+                  {
+                        "name": "M.Shnirman",
+                        "orcid": "https://orcid.org/0000-0001-7220-1424",
+                        "scholar": ""
+                  }
+            ],
+            "journal": "Physica D: Nonlinear Phenomena",
+            "year": "2024",
+            "tags": ["oscillators", "la"],
+            "doi": "https://doi.org/10.1016/j.physd.2024.134166",
+            "code": "https://github.com/mryodo/CoupledVdPBifurcation",
+            "abstract": "Synchronized dynamics of two coupled Van der Pol oscillators $x$ and $y$ balances between the attracting forces and the prevention of synchrony represented by the coupling $\mu$ and the half difference of their natural frequencies $\Delta\omega$. The current paper investigates two regimes of such balance: (i) $\mu$ slightly exceeds $\Delta\omega$, and (ii) $\mu$ is large; $\Delta\omega$ is fixed to the values related to studies of the solar cycle.  In case of regime (i), the oscillators are shown to quickly attain the neighborhood of the limit cycle of a complex geometry; their pre-limit behavior can be characterized by the vertical mismatch $x - y$.  If $\mu \to \infty$, case (ii),  the shape of the solutions of the underlying differential equations promptly follows that of the limit cycle, which is the solution of a single Van der Pol equation, but the tendency to the limit cycle is slow, being proportional to $1/\mu$.  Further, the mismatch between the oscillators disappears as $\mu$ increases. During the transition between the regimes occurred with the growth of $\mu$, the vertical mismatch and the time required to solutions to reach the neighborhood of the limit cycle exhibit the $\Lambda$- and $V$-shapes. These shapes attain the maximum and, respectively, minimum at moderate values of $\mu$ that were earlier suggested by studies of synchronization between solar activity components. "
+      },
+      {
             "name": "Contractivity of neural ODEs: an eigenvalue optimization problem",
             "authors": [
                   {
