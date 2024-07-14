@@ -204,12 +204,12 @@
     }
 
     .emailHider::before{
-            content: 'anton.savostianov';
+            content: 'savostianov';
             margin-left: 5pt;
             margin-top: -20pt;
         }
     .emailHider::after{
-            content: '\A gssi.it';
+            content: '\A cs.rwth-aachen.de';
         }
     .emailCatch{
       display: none;
